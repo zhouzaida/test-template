@@ -1,11 +1,11 @@
 name: Bug Report
 description: Thanks for your error report and we appreciate it a lot.
-
+title: "[Bug]: "
 body:
   - type: markdown
     attributes:
       value: |
-        Checklist
+        **Checklist**
         1. I have searched related issues but cannot get the expected help.
         2. I have read the [FAQ documentation](xxx) but cannot get the expected help.
         3. The bug has not been fixed in the latest version.
@@ -52,5 +52,5 @@ body:
   - type: markdown
     attributes:
       value: |
-        Bug fix
+        **Bug fix**
         If you have already identified the reason, you can provide the information here. If you are willing to create a [PR](https://github.com/zhouzaida/test-template/pulls) to fix it, please also leave a comment here and that would be much appreciated!
