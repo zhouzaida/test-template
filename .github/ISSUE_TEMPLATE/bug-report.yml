@@ -1,0 +1,56 @@
+name: Bug Report
+description: Thanks for your error report and we appreciate it a lot.
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Checklist
+        1. I have searched related issues but cannot get the expected help.
+        2. I have read the [FAQ documentation](xxx) but cannot get the expected help.
+        3. The bug has not been fixed in the latest version.
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: |
+        1. What command or script did you run?
+        2. Did you make any modifications on the code? Did you understand what you have modified?
+      placeholder: |
+        1. python examples/train.py
+        2. No
+  - type: dropdown
+    id: platforms
+    attributes:
+      label: What platforms are you seeing the problem on?
+      options:
+        - Linux
+        - Windows
+        - macOS
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: |
+        1. Please run `python -c "from mmcv.utils import collect_env; print(collect_env())"` to collect necessary environment information and paste it here.
+        2. If the above command throws an error, just need to provide the versions of PyTorch and MMCV.
+        3. You may add addition that may be helpful for locating the problem, such as
+          - How you installed PyTorch \[e.g., pip, conda, source\]
+          - Other environment variables that may be related (such as `$PATH`, `$LD_LIBRARY_PATH`, `$PYTHONPATH`, etc.)
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Error traceback
+      description: If applicable, paste the error trackback here.
+  - type: markdown
+    attributes:
+      value: |
+        Bug fix
+        If you have already identified the reason, you can provide the information here. If you are willing to create a [PR](https://github.com/zhouzaida/test-template/pulls) to fix it, please also leave a comment here and that would be much appreciated!
